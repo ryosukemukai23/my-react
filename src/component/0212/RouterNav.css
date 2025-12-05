@@ -1,0 +1,44 @@
+/* RouterNav.css */
+
+/* ナビ全体 */
+ul {
+  list-style: none;
+  /* デフォルトの丸リストを消す */
+  display: flex;
+  /* 横並びにする */
+  gap: 20px;
+  /* リンク間の間隔 */
+  padding: 0;
+  margin: 0;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+
+/* li は特にスタイル不要 */
+li {
+  display: inline-block;
+}
+
+/* NavLink 共通スタイル */
+ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* ホバー時 */
+ul li a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* アクティブリンク */
+ul li a.active {
+  background-color: #0056b3;
+  color: #fff;
+  font-weight: 600;
+}

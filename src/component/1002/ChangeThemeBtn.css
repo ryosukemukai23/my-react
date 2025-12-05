@@ -1,0 +1,27 @@
+.box {
+  width: 300px;
+  aspect-ratio: 1;
+  box-shadow: 1px 1px 5px;
+  ;
+  margin: 30px;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.skyblue {
+  background-color: skyblue;
+}
+
+.black {
+  background-color: black;
+}
+
+.border {
+  border: 1px solid black;
+}

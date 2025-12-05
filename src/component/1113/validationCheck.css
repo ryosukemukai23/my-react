@@ -1,0 +1,150 @@
+/* ===========================
+   ValidationCheck.css
+   =========================== */
+
+/* 全体レイアウト */
+form {
+  width: 100%;
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Hiragino Kaku Gothic ProN", "Segoe UI", sans-serif;
+  box-sizing: border-box;
+}
+
+/* 各項目ラップ */
+.form-wrap {
+  margin-bottom: 24px;
+}
+
+/* ラベルと入力 */
+label {
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+/* テキスト入力 */
+input[type="text"] {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #0096e3;
+  outline: none;
+}
+
+/* チェックボックスグループ */
+.form-wrap>div span {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 16px;
+  margin-bottom: 8px;
+}
+
+input[type="checkbox"] {
+  margin-left: 6px;
+}
+
+/* ファイル選択 */
+input[type="file"] {
+  display: block;
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+/* 送信ボタン */
+button {
+  display: inline-block;
+  background: #0096e3;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #0078b8;
+}
+
+/* エラーメッセージ */
+.err-text {
+  margin-top: 6px;
+  color: #d9534f;
+  font-size: 14px;
+  background: #ffeaea;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border-left: 4px solid #d9534f;
+}
+
+/* 送信結果 */
+.send-text {
+  background: #e7f7ef;
+  border-left: 4px solid #28a745;
+  border-radius: 6px;
+  padding: 12px 16px;
+  line-height: 1.6;
+  color: #333;
+  font-size: 15px;
+  animation: fadeIn 0.5s ease;
+}
+
+/* 結果タイトル */
+.send-text>div:first-child {
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #28a745;
+}
+
+/* スポーツ結果 */
+.send-text span {
+  display: inline-block;
+  background: #d0f0d0;
+  margin: 2px 4px;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* フェードインアニメーション */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* スマホ対応 */
+@media (max-width: 600px) {
+  form {
+    padding: 16px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .form-wrap>div span {
+    display: block;
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,71 @@
+/* stopCancelEvent.css */
+
+/* 親要素 */
+.parent {
+  border: 2px solid #67c3cd;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+  text-align: center;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.parent:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+/* ボタンコンテナ */
+.parent>div {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* ボタン */
+button {
+  padding: 8px 16px;
+  border: 2px solid #67c3cd;
+  background-color: #fff;
+  color: #333;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: #67c3cd;
+  color: #fff;
+}
+
+/* リンク */
+a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #67c3cd;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #005f73;
+  text-decoration: underline;
+}
+
+/* ボタンが有効モードの場合のスタイル */
+button[data="active"] {
+  border-color: #28a745;
+}
+
+button[data="active"]:hover {
+  background-color: #28a745;
+  color: #fff;
+}

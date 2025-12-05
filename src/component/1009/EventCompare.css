@@ -1,0 +1,46 @@
+#outer {
+  width: 300px;
+  height: 200px;
+  border: 3px solid #333;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin: 40px auto;
+  font-family: "Segoe UI", sans-serif;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+#outer:hover {
+  background-color: #e0f7fa;
+}
+
+#inner {
+  width: 120px;
+  height: 80px;
+  background-color: #ffccbc;
+  border: 2px solid #ff5722;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 80px;
+  margin: 20px auto;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+#inner:hover {
+  background-color: #ffab91;
+}
+
+#outer div {
+  font-size: 0.9rem;
+  color: #333;
+  margin-top: 10px;
+  background: #fff;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  max-height: 120px;
+  overflow-y: auto;
+  line-height: 1.4;
+}

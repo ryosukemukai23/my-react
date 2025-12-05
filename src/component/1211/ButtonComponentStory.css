@@ -1,0 +1,25 @@
+.btnStory {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+}
+
+.delete {
+  background: #dbdbdb;
+}
+
+.add {
+  background: #77ffdd;
+}
+
+.general {
+  background: #ffff00;
+}
+
+.radius {
+  border-radius: 50px;
+}
+
+.shadow {
+  box-shadow: 5px 5px 5px #d3d3d3
+}

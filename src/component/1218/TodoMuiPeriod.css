@@ -1,0 +1,70 @@
+/* TodoMuiPeriod.css */
+
+.wrapper {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.wrapper h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+/* 入力欄と追加ボタンのスタイル */
+.wrapper .MuiTextField-root {
+  width: 60%;
+}
+
+.wrapper .MuiButton-root {
+  vertical-align: bottom;
+}
+
+/* TODOリスト */
+.MuiList-root {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 0;
+}
+
+/* 各タスクアイテム */
+.MuiListItem-root {
+  display: flex;
+  align-items: center;
+  padding-right: 100px;
+  /* ListItemSecondaryActionのスペース確保 */
+}
+
+/* 期限表示 */
+.date {
+  font-size: 0.9rem;
+  color: #666666;
+  margin-right: 10px;
+}
+
+/* 削除ボタン */
+.MuiIconButton-root {
+  color: #ff5252;
+}
+
+/* レスポンシブ */
+@media (max-width: 480px) {
+  .wrapper .MuiTextField-root {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .wrapper .MuiButton-root {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .MuiListItem-root {
+    padding-right: 80px;
+  }
+}

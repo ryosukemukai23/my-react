@@ -1,0 +1,123 @@
+/* ===== 全体レイアウト ===== */
+body {
+  font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 40px 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+/* ===== TodoList全体のコンテナ ===== */
+.form-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.form-wrap label {
+  font-size: 16px;
+}
+
+.form-wrap input[type="text"] {
+  padding: 6px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 200px;
+  transition: border-color 0.3s;
+}
+
+.form-wrap input[type="text"]:focus {
+  border-color: #3b82f6;
+  outline: none;
+}
+
+/* ===== ボタン ===== */
+.form-wrap button {
+  background-color: #3b82f6;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-wrap button:hover {
+  background-color: #2563eb;
+}
+
+/* ===== Todoリスト部分 ===== */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+li {
+  background: #fff;
+  margin-bottom: 10px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  transition: background-color 0.3s;
+}
+
+/* 完了済みタスク */
+li.done {
+  text-decoration: line-through;
+  color: #999;
+  background-color: #e9ecef;
+}
+
+/* ===== リストの中のボタン ===== */
+li button {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background-color 0.3s;
+}
+
+li button:first-of-type {
+  background-color: #22c55e;
+}
+
+li button:first-of-type:hover {
+  background-color: #16a34a;
+}
+
+li button:hover {
+  background-color: #dc2626;
+}
+
+/* ===== レスポンシブ対応 ===== */
+@media (max-width: 480px) {
+  .form-wrap {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-wrap input[type="text"] {
+    width: 100%;
+  }
+
+  ul {
+    width: 90%;
+  }
+}
